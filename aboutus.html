@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bobby's Vacation Ventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.btn {
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.active {
+    border-bottom: 2px solid #ff6f61;
+}
+
+/* About Hero Section */
+.about-hero {
+    background: url('about-hero.jpg') no-repeat center center/cover;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 1.2em;
+}
+
+/* Company Overview Section */
+.company-overview {
+    padding: 50px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.company-overview h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.company-overview p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.mission,
+.vision {
+    width: 45%;
+}
+
+.mission h2,
+.vision h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.mission p,
+.vision p {
+    font-size: 1.1em;
+}
+
+/* Our Team Section */
+.our-team {
+    padding: 50px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.our-team h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    width: 30%;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: #ff6f61;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-newsletter {
+    margin-top: 20px;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-newsletter button.btn {
+    padding: 10px;
+    background: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">Bobby's Vacation Ventures</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Your trusted partner in luxury car hire and seamless hotel transfers.</p>
+            </div>
+        </section>
+
+        <!-- Company Overview -->
+        <section class="company-overview">
+            <div class="container">
+                <h2>Our Commitment to Excellence</h2>
+                <p>Bobby's Vacation Ventures is dedicated to providing exceptional car hire and hotel transfer services. With years of experience in the travel industry, we pride ourselves on delivering unparalleled customer satisfaction. Our commitment to excellence is evident in every aspect of our services, from the quality of our vehicles to the professionalism of our team.</p>
+                <p>Whether you’re embarking on a business trip or a leisurely vacation, we ensure that your journey is smooth, comfortable, and memorable. At Bobby's Vacation Ventures, your satisfaction is our top priority.</p>
+            </div>
+        </section>
+
+        <!-- Mission and Vision -->
+        <section class="mission-vision">
+            <div class="container">
+                <div class="mission">
+                    <h2>Our Mission</h2>
+                    <p>To provide our clients with exceptional travel experiences through high-quality car hire services and seamless hotel transfers, ensuring every journey is a luxurious and stress-free adventure.</p>
+                </div>
+                <div class="vision">
+                    <h2>Our Vision</h2>
+                    <p>To be the leading provider of luxury travel services, recognized for our commitment to excellence, customer satisfaction, and innovative solutions in the industry.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team -->
+        <section class="our-team">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="ceo.jpg" alt="CEO">
+                        <h3>Bobby Smith</h3>
+                        <p>Founder & CEO</p>
+                        <p>Bobby is the visionary behind Bobby's Vacation Ventures. With over 20 years of experience in the travel and hospitality industry, Bobby's passion for excellence and customer satisfaction drives the company forward.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="operations.jpg" alt="Operations Manager">
+                        <h3>Sarah Johnson</h3>
+                        <p>Operations Manager</p>
+                        <p>Sarah ensures that every aspect of our services runs smoothly. Her attention to detail and commitment to quality make her an invaluable part of our team.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="customer-service.jpg" alt="Customer Service">
+                        <h3>James Brown</h3>
+                        <p>Customer Service Lead</p>
+                        <p>James leads our customer service team with a focus on delivering exceptional support. His dedication to client satisfaction is unmatched.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                </div>
+                <div class="footer-contact">
+                    <p>Address: 123 Luxury Lane, Travel City, TC 45678</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Email: contact@bobbysvacation.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <p>Stay updated with our latest offers and news.</p>
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+            <p class="footer-note">© 2024 Bobby's Vacation Ventures. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
