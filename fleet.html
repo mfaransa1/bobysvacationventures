@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet - Bobby's Vacation Ventures</title>
+    <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.btn {
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.active {
+    border-bottom: 2px solid #ff6f61;
+}
+
+/* Hero Section */
+.fleet-hero {
+    background: url('fleet-hero.jpg') no-repeat center center/cover;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fleet-hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.fleet-hero p {
+    font-size: 1.2em;
+}
+
+/* Fleet Section */
+.fleet {
+    padding: 50px 0;
+}
+
+.fleet h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fleet-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fleet-item {
+    width: 45%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fleet-item img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.fleet-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fleet-item p {
+    font-size: 1.1em;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: #ff6f61;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+  </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">Bobby's Vacation Ventures</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="hotel-transfers.html">Hotel Transfers</a></li>
+                    <li><a href="fleet.html" class="active">Fleet</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="fleet-hero">
+            <div class="container">
+                <h1>Our Fleet</h1>
+                <p>Discover our premium range of vehicles available for hire, designed to offer comfort and style for any journey.</p>
+            </div>
+        </section>
+
+        <!-- Fleet Section -->
+        <section class="fleet">
+            <div class="container">
+                <h2>Luxury Vehicles</h2>
+                <div class="fleet-items">
+                    <div class="fleet-item">
+                        <img src="luxury-car1.jpg" alt="Luxury Sedan">
+                        <h3>Luxury Sedan</h3>
+                        <p>Experience unparalleled comfort and elegance with our Luxury Sedan. Perfect for corporate travel or special occasions.</p>
+                    </div>
+                    <div class="fleet-item">
+                        <img src="luxury-car2.jpg" alt="Luxury SUV">
+                        <h3>Luxury SUV</h3>
+                        <p>Enjoy the spacious and refined Luxury SUV, ideal for family trips or executive transport with a touch of class.</p>
+                    </div>
+                </div>
+
+                <h2>Economy Vehicles</h2>
+                <div class="fleet-items">
+                    <div class="fleet-item">
+                        <img src="economy-car1.jpg" alt="Economy Compact">
+                        <h3>Economy Compact</h3>
+                        <p>Our Economy Compact car offers efficiency and practicality for everyday use and city exploration.</p>
+                    </div>
+                    <div class="fleet-item">
+                        <img src="economy-car2.jpg" alt="Economy Sedan">
+                        <h3>Economy Sedan</h3>
+                        <p>Affordable and reliable, the Economy Sedan is perfect for budget-conscious travelers seeking comfort and utility.</p>
+                    </div>
+                </div>
+
+                <h2>Family Vehicles</h2>
+                <div class="fleet-items">
+                    <div class="fleet-item">
+                        <img src="family-car1.jpg" alt="Family Van">
+                        <h3>Family Van</h3>
+                        <p>Our Family Van provides ample space and convenience for family vacations or group outings.</p>
+                    </div>
+                    <div class="fleet-item">
+                        <img src="family-car2.jpg" alt="Family SUV">
+                        <h3>Family SUV</h3>
+                        <p>With plenty of room and comfort, the Family SUV is ideal for long journeys and family adventures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="hotel-transfers.html">Hotel Transfers</a></li>
+                    <li><a href="fleet.html">Fleet</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                </div>
+                <div class="footer-contact">
+                    <p>Address: 123 Luxury Lane, Travel City, TC 45678</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Email: <a href="mailto:contact@bobbysvacation.com">contact@bobbysvacation.com</a></p>
+                </div>
+            </div>
+            <p class="footer-note">© 2024 Bobby's Vacation Ventures. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
