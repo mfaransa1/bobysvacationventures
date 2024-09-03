@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Transfers - Bobby's Vacation Ventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.btn {
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.active {
+    border-bottom: 2px solid #ff6f61;
+}
+
+/* Hero Section */
+.transfers-hero {
+    background: url('transfers-hero.jpg') no-repeat center center/cover;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.transfers-hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.transfers-hero p {
+    font-size: 1.2em;
+}
+
+/* Transfer Services Section */
+.transfer-services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.transfer-services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-category {
+    margin-bottom: 30px;
+}
+
+.service-category h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.service-category p {
+    font-size: 1.1em;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us ul li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: #ff6f61;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-newsletter {
+    margin-top: 20px;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-newsletter button.btn {
+    padding: 10px;
+    background: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">Bobby's Vacation Ventures</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="hotel-transfers.html" class="active">Hotel Transfers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="transfers-hero">
+            <div class="container">
+                <h1>Hotel Transfers</h1>
+                <p>Experience seamless and luxurious transfers with Bobby's Vacation Ventures.</p>
+            </div>
+        </section>
+
+        <!-- Transfer Services Offered -->
+        <section class="transfer-services">
+            <div class="container">
+                <h2>Our Transfer Services</h2>
+                <div class="service-category">
+                    <h3>Airport Pickups & Drop-offs</h3>
+                    <p>Start and end your journey in comfort and style. Our airport transfer service offers punctual pickups and drop-offs, ensuring a stress-free experience. Whether arriving or departing, our professional drivers are ready to provide a smooth and pleasant transfer.</p>
+                </div>
+                <div class="service-category">
+                    <h3>City Tours</h3>
+                    <p>Explore the city's most iconic landmarks and hidden gems with our personalized city tours. Our experienced drivers will guide you through the best spots, offering a unique and memorable experience tailored to your preferences.</p>
+                </div>
+                <div class="service-category">
+                    <h3>Special Packages</h3>
+                    <p>Make your stay even more special with our exclusive transfer packages. Whether it's a romantic getaway, a family vacation, or a business trip, we offer tailored transfer solutions that cater to your specific needs and desires.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose-us">
+            <div class="container">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li><strong>Luxury Vehicles:</strong> Travel in the finest cars equipped with modern amenities for your comfort.</li>
+                    <li><strong>Reliable Service:</strong> Our punctual and professional drivers ensure you reach your destination on time.</li>
+                    <li><strong>Personalized Experience:</strong> Tailor your transfer experience to suit your unique needs and preferences.</li>
+                    <li><strong>24/7 Availability:</strong> We are always ready to assist you, no matter the time or location.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="hotel-transfers.html">Hotel Transfers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                </div>
+                <div class="footer-contact">
+                    <p>Address: 123 Luxury Lane, Travel City, TC 45678</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Email: contact@bobbysvacation.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <p>Stay updated with our latest offers and news.</p>
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+            <p class="footer-note">© 2024 Bobby's Vacation Ventures. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
