@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Bobby's Vacation Ventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.btn {
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.active {
+    border-bottom: 2px solid #ff6f61;
+}
+
+/* Services Hero Section */
+.services-hero {
+    background: url('services-hero.jpg') no-repeat center center/cover;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services-hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.services-hero p {
+    font-size: 1.2em;
+}
+
+/* Service Sections */
+.car-hire,
+.hotel-transfer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.car-hire h2,
+.hotel-transfer h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-category {
+    margin-bottom: 30px;
+}
+
+.service-category h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.service-category p {
+    font-size: 1.1em;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: #ff6f61;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-newsletter {
+    margin-top: 20px;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-newsletter button.btn {
+    padding: 10px;
+    background: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">Bobby's Vacation Ventures</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>Experience the ultimate in luxury and convenience with Bobby's Vacation Ventures.</p>
+            </div>
+        </section>
+
+        <!-- Car Hire Options -->
+        <section class="car-hire">
+            <div class="container">
+                <h2>Car Hire Options</h2>
+                <div class="service-category">
+                    <h3>Luxury Vehicles</h3>
+                    <p>Indulge in our premium selection of luxury cars, designed to offer you an unparalleled driving experience. Whether for business or leisure, our luxury vehicles provide elegance, comfort, and style.</p>
+                </div>
+                <div class="service-category">
+                    <h3>Economy Vehicles</h3>
+                    <p>Our economy car hire service offers a practical and affordable solution for your transportation needs. Enjoy reliable and efficient vehicles without compromising on comfort.</p>
+                </div>
+                <div class="service-category">
+                    <h3>Family Vehicles</h3>
+                    <p>Travel with your loved ones in our spacious family vehicles. Perfect for vacations and group outings, these cars offer ample space and modern features to ensure a comfortable journey for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hotel Transfer Services -->
+        <section class="hotel-transfer">
+            <div class="container">
+                <h2>Hotel Transfer Services</h2>
+                <p>Arrive at your destination in style and comfort with our seamless hotel transfer services. We provide reliable and punctual transfers to and from your hotel, ensuring a stress-free start and end to your journey.</p>
+                <p>Choose from a variety of vehicles that cater to your specific needs, whether you're traveling alone, with family, or with a group. Our professional drivers are dedicated to providing you with a smooth and pleasant transfer experience.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                </div>
+                <div class="footer-contact">
+                    <p>Address: 123 Luxury Lane, Travel City, TC 45678</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Email: contact@bobbysvacation.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <p>Stay updated with our latest offers and news.</p>
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+            <p class="footer-note">© 2024 Bobby's Vacation Ventures. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
