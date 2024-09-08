@@ -4,7 +4,290 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bobby's Vacation Ventures</title>
-    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet">
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.btn {
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.intro,
+.services,
+.booking,
+.testimonials,
+.gallery {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.intro .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.services .service {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    text-align: left;
+}
+
+.services .service img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.services .service h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.services .service p {
+    margin-bottom: 10px;
+}
+
+.services .service .btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.booking form {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+.booking form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.booking form input,
+.booking form select,
+.booking form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking form button {
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.testimonials .testimonial {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.testimonials .testimonial p {
+    font-size: 1.1em;
+}
+
+.testimonials .testimonial span {
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-links,
+.footer-social,
+.footer-contact,
+.footer-newsletter {
+    width: 22%;
+}
+
+.footer-links li,
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer-newsletter input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter .btn {
+    width: 100%;
+}
+
+.footer-note {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav ul li a.btn {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .services .service {
+        width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links,
+    .footer-social,
+    .footer-contact,
+    .footer-newsletter {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+    </style>
 </head>
 <body>
     <!-- Header Section -->
